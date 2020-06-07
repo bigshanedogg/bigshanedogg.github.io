@@ -2,7 +2,7 @@
 name: Bigshane
 job_title: NLP Engineer
 email: bigshane319@gmail.com
-description: I build models for solving engineers' problem at Samsung. A variety of approaches and performance enhancements are available in DL models, currently the BERT variants.
+description: I find ways to alleviate engineers' discomfort at Samsung. A variety of approaches and performance enhancements are available in DL models, currently the BERT variants.
 avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
 favicon: /favicon.ico
 twitter_handler: your_handler
@@ -56,7 +56,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
+url: "https://bigshanedogg.github.io"
 baseurl: ""
 
 # Includes
