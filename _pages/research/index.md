@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Research and Implementation"
+title:  "Research"
 permalink: "/research/"
 ---
 
@@ -10,7 +10,7 @@ permalink: "/research/"
 </figure>
 
 ### List of papers reviewed or implemented
-- Word movers distance
+- Word movers distance - reviewed [ ]   implemented [ ] 
 - BERT
 - ELMo
 - Sentence Bert
