@@ -9,9 +9,9 @@ permalink: "/research/"
     <figcaption>Created by <a href="https://dribbble.com/HannahLizSharp" target="_blank_">Hannah Sharp</a></figcaption>
 </figure>
 
-### List of papers reviewed or implemented
-- Word movers distance - reviewed [ ]   implemented [ ] 
-- BERT
+### Inspiring papers
+- [ ] Word movers distance
+- [x] BERT
 - ELMo
 - Sentence Bert
 - ...
