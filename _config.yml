@@ -3,7 +3,7 @@ name: Bigshane
 job_title: NLP Engineer
 email: bigshane319@gmail.com
 description: I find ways to alleviate engineers' discomfort at Samsung. A variety of approaches and performance enhancements are available in DL models, currently the BERT variants.
-avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
+avatar: assets/img/profile/bertticon_shane.jpg # https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
 favicon: /favicon.ico
 twitter_handler: your_handler
 analytics_code: UA-XXXXXXX-2
