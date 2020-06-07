@@ -1,8 +1,8 @@
 # General Settings
-name: Steve Austin
-job_title: UI/UX Engineer
-email: youremail@gmail.com
-description: I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.
+name: Bigshane
+job_title: NLP Engineer
+email: bigshane319@gmail.com
+description: I build models for solving engineers' problem at Samsung. A variety of approaches and performance enhancements are available in DL models, currently the BERT variants.
 avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
 favicon: /favicon.ico
 twitter_handler: your_handler
@@ -56,8 +56,8 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
-baseurl: ""
+url: https://bigshanedogg.github.io
+baseurl: /home
 
 # Includes
 include: ["_pages"]
