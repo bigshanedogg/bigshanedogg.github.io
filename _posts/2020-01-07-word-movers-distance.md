@@ -11,8 +11,12 @@ category:
 
 {% capture content_kor %}
 한국어 섹션입니다.
+<!--more-->
+추가된 한국어 섹션입니다.
 {% endcapture %}
  
  {% capture content_eng %}
  영어 섹션입니다.
+ <!--more-->
+ 추가된 영어 섹션입니다.
  {% endcapture %}
