@@ -20,8 +20,14 @@ layout: default
     </header>
 
     <div class="post-content">
-        <p>한국어 세션입니다.</p>
+        <p>한국어</p>
         {{ page.content_kor }}
+        <p>컨텐츠</p>
+        {{ page.content }}
+        <p>컨텐츠 0번</p>
+        {{ page.content[0] }}
+        <p>컨텐츠_영어</p>
+        {{ page.content.content_eng }}
     </div>
 
     <footer class="post-footer">
