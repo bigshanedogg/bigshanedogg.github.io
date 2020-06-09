@@ -11,8 +11,8 @@ permalink: "/research/"
 
 ### Inspiring papers
 - Word movers distance
-    - [x] [reviewed](https://bigshanedogg.github.io)
-    - [x] implemented
+    - [x]  [reviewed](https://bigshanedogg.github.io)
+    - [x] ,mimplemented
 - BERT
 - ELMo
 - Sentence Bert
