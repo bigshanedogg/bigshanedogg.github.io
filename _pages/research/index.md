@@ -9,10 +9,8 @@ permalink: "/research/"
     <figcaption>Created by <a href="https://dribbble.com/HannahLizSharp" target="_blank_">Hannah Sharp</a></figcaption>
 </figure>
 
-### Inspiring papers
-- Word movers distance
-    - [x]  [reviewed](https://bigshanedogg.github.io)
-    - [x] ,mimplemented
+### Reviewed papers 
+- [x] [Word movers distance](https://bigshanedogg.github.io) (code included)
 - BERT
 - ELMo
 - Sentence Bert
