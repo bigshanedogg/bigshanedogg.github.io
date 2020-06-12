@@ -4,10 +4,9 @@ date: 2019-01-07 21:42
 title:  "Word Movers Distance"
 mood: happy
 comments: true
-category: 
+category:
+- nlp 
 - paper review
-- nlp
-- distance metric
 ---
 영어 섹션입니다.
 버튼 css 추가
