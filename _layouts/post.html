@@ -20,12 +20,11 @@ layout: default
     </header>
 
     <div class="post-content">
-        <p>페이지 컨텐츠</p>
-        {{ page.content }}
-        <p>컨텐츠_영어</p>
-        {{ page.content.eng }}
+        {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
         <p>컨텐츠</p>
-        {{ page.eng }}
+        {{ contentArray.last }}
+        <p>컨텐츠_영어</p>
+        {{ contentArray.first }}
     </div>
 
     <footer class="post-footer">

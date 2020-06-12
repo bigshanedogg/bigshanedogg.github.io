@@ -8,16 +8,12 @@ category:
 - nlp
 - distance metric
 ---
-content:
 한국어 섹션입니다.
 추가된 한국어 섹션입니다.
 
-{% capture eng %}
+<!--more-->
 영어 섹션입니다.
 추가된 영어 섹션입니다.
-{% endcapture %}
----
-content_2:
 TEST
 1사실 추가된 내용이 더 있는데요. 발견하기 어려우셨을 수 있습니다.
 2사실 추가된 내용이 더 있는데요. 발견하기 어려우셨을 수 있습니다.
