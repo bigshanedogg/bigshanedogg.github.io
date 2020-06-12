@@ -3,6 +3,7 @@ layout: post
 date: 2019-01-07 21:42
 title:  "Word Movers Distance"
 mood: happy
+comments: true
 category: 
 - paper review
 - nlp

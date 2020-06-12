@@ -57,7 +57,7 @@ defaults:
 
 # Serving
 url: "https://bigshanedogg.github.io"
-baseurl: ""
+baseurl: "/home/"
 
 # Includes
 include: ["_pages"]

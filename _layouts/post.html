@@ -29,6 +29,7 @@ layout: default
         {% assign contentArray = page.content | markdownify | split: site.language_separator %}
         <div lang="eng">
             <p>영어 컨텐츠 시작입니다.</p>
+            {{ site.url }}
             {{ contentArray.first }}
         </div>
         <div lang="kor">
