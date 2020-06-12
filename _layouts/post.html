@@ -17,20 +17,15 @@ layout: default
             {% endif %}
         </ul>
         <h2 itemprop="name headline">{{ page.title }}</h2>
-    </header>
-
-    <div class="post-content">
         <form>
-            <!--<label for="lang-switch">-->
-                <!--<span lang="ko">언어</span>-->
-                <!--<span lang="en">Language</span>-->
-            <!--</label>-->
             <select id="lang-switch">
                 <option value="en" selected>English</option>
                 <option value="ko" >한국어</option>
             </select>
         </form>
+    </header>
 
+    <div class="post-content">
         {% assign contentArray = page.content | markdownify | split: site.language_separator %}
         <div lang="en">
             <p>영어 컨텐츠 시작입니다.</p>
