@@ -11,11 +11,11 @@ disqus: your_disqus_site
 
 # Social Accounts
 social_networks:
--  { name: facebook, url: 'http://facebook.com' }
+-  { name: facebook, url: '' }
 -  { name: twitter, url: 'http://twitter.com' }
 -  { name: instagram, url: '' }
 -  { name: google-plus, url: '' }
--  { name: linkedin, url: '' }
+-  { name: linkedin, url: 'http://www.linkedin.com/in/hodong-lee-ba2274112/' }
 -  { name: skype, url: '' }
 -  { name: github, url: '' }
 -  { name: codepen, url: '' }
