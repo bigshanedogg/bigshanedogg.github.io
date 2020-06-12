@@ -21,10 +21,10 @@ layout: default
 
     <div class="post-content">
         <form>
-            <label for="lang-switch">
-                <span lang="ko">언어</span>
-                <span lang="en">Language</span>
-            </label>
+            <!--<label for="lang-switch">-->
+                <!--<span lang="ko">언어</span>-->
+                <!--<span lang="en">Language</span>-->
+            <!--</label>-->
             <select id="lang-switch">
                 <option value="en" selected>English</option>
                 <option value="ko" >한국어</option>
@@ -77,3 +77,25 @@ layout: default
     </script>
 </aside>
 {% endif %}
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="ko"]').show(); // show just Korean text (you can change it)
+$('#lang-switch').change(function () { // put onchange event when user select option from select
+    var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ko':
+            $('[lang]').hide();
+            $('[lang="ko"]').show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="ko"]').show();
+        }
+});
+</script>
