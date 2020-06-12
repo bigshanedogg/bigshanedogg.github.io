@@ -10,8 +10,8 @@ permalink: "/research/"
 </figure>
 
 ### Reviewed papers 
-- [x] [Word movers distance](https://bigshanedogg.github.io) (code included)
-- BERT
-- ELMo
-- Sentence Bert
+- [x]  [Word movers distance](https://bigshanedogg.github.io) (code included)
+- [ ]  BERT
+- [ ]  ELMo
+- [ ]  Sentence Bert
 - ...
