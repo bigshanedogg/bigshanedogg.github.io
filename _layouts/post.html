@@ -29,7 +29,7 @@ layout: default
         {% assign contentArray = page.content | markdownify | split: site.language_separator %}
         <div lang="eng">
             <p>영어 컨텐츠 시작입니다.</p>
-            사이트: {{ site.url }}
+            사이트: <a href="{{ site.url }}/assets/doc/waterfall.png">다운로드: {{ site.url }}/assets/doc/waterfall.png</a>
             베이스: {{ site.baseurl }}
             페이지: {{ page.url }}
             디스커스: {{ site.disqus }}
