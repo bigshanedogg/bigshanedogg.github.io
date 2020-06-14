@@ -12,8 +12,7 @@ category:
 버튼 css 추가
 추가된 영어 섹션입니다.
 처음에는 영어로 나옵니다.
-[get the PDF](assets/doc/waterfall.png)
-[get the PDF2](({{ site.url }}assets/doc/waterfall.png)
+[get the PDF2]({{ site.url }}/assets/doc/sample_pdf.pdf)
 <!--more-->
 추가된 영어 섹션입니다2.
 
