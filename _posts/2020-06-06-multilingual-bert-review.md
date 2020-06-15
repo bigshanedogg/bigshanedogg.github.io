@@ -5,18 +5,13 @@ title: Multilingual BERT
 description: Scrutinzing Multilingual BERT inside
 comments: True
 category: 
-- nlp
-- deep_learning
 - paper_review
 tags:
 - nlp
 - deep_learning
-- paper_review
 - language_model
 - bert
 ---
-(This article is paper review of '[How multilingual is Multilingual BERT?](https://arxiv.org/abs/1906.01502)')
-
 ### TLDR;
 - M-BERT(Multilingual BERT) is BERT trained on corpora from various languages.
 - M-BERT does not seem to learn systematic transformation of languages. (complicative syntactic/semantic relationship between languages)
@@ -39,7 +34,6 @@ M-BERT, trained on corpora from 104 languages, is the reference model to test ze
 Before starting sentence level test and further analysis, Simple token-level tests were conducted.
 - NER: Average F1 60~70
 - POS tagging: Average F1 80~90
-<br>
 Considering there was no additional parallel data in fine-tunning, the scores seem significant at first glance. However, the substantial token-level performance may be attributed to vocabulary memorization, lexical overlap between languages; the performance may be lifted by cross-lingual trasfer by co-occurring words in corpora.<br>
 
 The comparison between EN-BERT, trained on only English wiki corpus, and M-BERT was conducted to observe transferability according to lexical overlap and possibility to languages written in different scripts (no overlap). 

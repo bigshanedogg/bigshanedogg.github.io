@@ -5,7 +5,6 @@ title: Fuzzy C-Means
 description: When data point belongs to only one cluster
 comments: True
 category: 
-- machine_learning
 - summary
 tags:
 - machine_learning

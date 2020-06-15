@@ -5,7 +5,6 @@ title: Hierarchical Agglomerative Clustering
 description: Represent clusters into tree
 comments: True
 category: 
-- machine_learning
 - summary
 tags:
 - machine_learning

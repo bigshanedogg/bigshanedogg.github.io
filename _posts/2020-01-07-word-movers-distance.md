@@ -5,8 +5,6 @@ title:  "Word Movers Distance"
 mood: happy
 comments: true
 category:
-- nlp 
-- machine_learning
 - paper_review
 tags:
 - nlp
