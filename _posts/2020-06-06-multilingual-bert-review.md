@@ -5,9 +5,11 @@ title: Multilingual BERT
 description: Scrutinzing Multilingual BERT inside
 comments: True
 category: 
+- nlp
 - deep_learning
 - paper_review
 tags:
+- nlp
 - deep_learning
 - paper_review
 - language_model

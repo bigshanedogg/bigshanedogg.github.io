@@ -6,7 +6,13 @@ mood: happy
 comments: true
 category:
 - nlp 
-- paper review
+- machine_learning
+- paper_review
+tags:
+- nlp
+- machine_learning
+- distance_metric
+- python
 ---
 영어 섹션입니다.
 버튼 css 추가
