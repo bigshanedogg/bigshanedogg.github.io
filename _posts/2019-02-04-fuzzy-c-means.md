@@ -67,9 +67,7 @@ m = 2
 metric = "euclidean" # "cosine" # "mahalanobis"
 optimization = ["weights"] # ["weights", "centers", "error"]
 
-fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_change=1e-4, min_weights_change=1e-6, max_iter=500, 
-                 verbose=False)
-
+fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_change=1e-4, min_weights_change=1e-6, max_iter=500, verbose=False)
 fcm_model.fit(X, optimization=optimization)
 {% endhighlight %}
 

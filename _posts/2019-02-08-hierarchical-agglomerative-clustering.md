@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-02-04 19:36
+date: 2019-02-08 21:41
 title: Hierarchical Agglomerative Clustering 
 description: Represent clusters into tree
 comments: True
