@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2019-02-04 19:36
-title: Fuzzy C-Means; When data point belongs to only one cluster
-description: Basic information about the Steve.
+title: Fuzzy C-Means
+description: When data point belongs to only one cluster
 comments: True
 category: 
 - machine_learning

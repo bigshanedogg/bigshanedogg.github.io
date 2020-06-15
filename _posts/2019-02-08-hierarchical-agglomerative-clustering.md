@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2019-02-04 19:36
-title: Hierarchical Agglomerative Clustering; Represent clusters into tree
-description: Basic information about the Steve.
+title: Hierarchical Agglomerative Clustering 
+description: Represent clusters into tree
 comments: True
 category: 
 - machine_learning
@@ -36,7 +36,7 @@ tags:
 
 ### Python example
 #### 1. Clustering w/ sickit-learn
-{% highlight py linenos %}
+{% highlight python linenos %}
 import numpy as np
 from sklearn.cluster import AgglomerativeClustering
 
@@ -48,7 +48,7 @@ cosine_label_list = list(cosine_cl_model.labels_)
 {% endhighlight %}
 
 #### 2. Make Tree
-{% highlight py linenos %}
+{% highlight python linenos %}
 # make tree
 import itertools
 ii = itertools.count(data.shape[0])
@@ -66,7 +66,7 @@ get_depth(root_node, 0)
 
 
 #### 3. Arrange Cluster by Depth
-{% highlight py linenos %}
+{% highlight python linenos %}
 # get max depth
 max_depth = None
 for depth, node_list in enumerate(depth_list):
