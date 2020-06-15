@@ -28,7 +28,7 @@ layout: default
 
     <div class="post-content">
         {% assign contentArray = page.content | markdownify | split: site.footer_separator %}
-        {% assign languageArray = {{ contentArray.first }} | markdownify | split: site.language_separator %}
+        {% assign languageArray = contentArray.first | markdownify | split: site.language_separator %}
         <div lang="eng">
             {{ languageArray.first }}
         </div>
@@ -36,7 +36,7 @@ layout: default
             <p>(* 기계 번역된 한국어이니, 다소 어눌한 점 이해 부탁드립니다.)</p>
             {{ languageArray.last }}
         </div>
-        { contentArray.last }}
+        {{ contentArray.last }}
     </div>
 
     <footer class="post-footer">
