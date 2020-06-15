@@ -32,14 +32,17 @@ M-BERT, trained on corpora from 104 languages, is the reference model to test ze
 ###  The hypothesis: How multilingual is M-BERT?
 #### A. Vocabulary Memorization?
 Before starting sentence level test and further analysis, Simple token-level tests were conducted.
-- NER: Average F1 60~70
-- POS tagging: Average F1 80~90
+- performance comparison to tasks, NER and POS 
+    - NER: Average F1 60~70
+    - POS tagging: Average F1 80~90
+    
 Considering there was no additional parallel data in fine-tunning, the scores seem significant at first glance. However, the substantial token-level performance may be attributed to vocabulary memorization, lexical overlap between languages; the performance may be lifted by cross-lingual trasfer by co-occurring words in corpora.<br>
 
-The comparison between EN-BERT, trained on only English wiki corpus, and M-BERT was conducted to observe transferability according to lexical overlap and possibility to languages written in different scripts (no overlap). 
-- EN-BERT: Strong correlation between f1 score and lexical overlap. F1 score is close to zero when there is no overlap.
-- M-BERT: Weak correlation between f1 score and lexical overlap. F1 score is over 40 even when there is no overlap.
-<br>
+The comparison between EN-BERT, trained on only English wiki corpus, and M-BERT was conducted to observe transferability according to lexical overlap and possibility to languages written in different scripts (no overlap).
+- brief comparison of EN-BERT and M-BERT 
+    - EN-BERT: Strong correlation between f1 score and lexical overlap. F1 score is close to zero when there is no overlap.
+    - M-BERT: Weak correlation between f1 score and lexical overlap. F1 score is over 40 even when there is no overlap.
+
 The above result shows that vocabulary memorization may affect performance, but it is not the only factor.<br>
 
 #### B. Topological Similarity between languages?
@@ -54,8 +57,9 @@ The next experiment is finding the nearest sentence of target sentences using pa
 ### Conc.
 M-BERT shows remarkable performance in task on other language and  task on parallel data such as the nearest neighbor accuracy, even if the model was only pre-trained on unannotated data while not fine-tunned on target language. However, it is likely that the performance is based on mapping new vocabularies in learned structures, not learning the systematic transformations between languages. <br>
 
+<!--language-->
+
+
+<!--footer-->
 #### Reference and Implementation:
 - paper: [How multilingual is Multilingual BERT?](https://arxiv.org/abs/1906.01502), 4 Jun 2019 
-
-
-<!--language-->

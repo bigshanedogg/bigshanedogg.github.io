@@ -74,6 +74,7 @@ paginate_path: "/page:num/"
 markdown: kramdown
 excerpt_separator: <!--more-->
 language_separator: <!--language-->
+footer_separator: <!--footer-->
 
 # Assets Settings
 sass:
