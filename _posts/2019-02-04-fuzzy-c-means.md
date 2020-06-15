@@ -17,7 +17,9 @@ tags:
     - The degree of belonging to each centroid is represented by scalar between 0 and 1.
     - It seems proper to cluster which the boundary is ambiguous such as natural language task.
 - Likewise other prototype-based clustering such as K-means family, Fuzzy C-means clustering finds optimal status through repetition.
-  
+
+<!--more-->
+
 ### B. Process
 1. Choose a number of clusters, K
 2. Assign randomly to each point coefficients for being in the clusters.
@@ -34,7 +36,7 @@ tags:
 
 ### Python example
 #### 1. Generate sample data
-{% highlight py linenos %}
+```python
 # Define three cluster centers
 centers = [[4, 2],
            [1, 7],
@@ -55,11 +57,11 @@ for i, ((xmu, ymu), (xsigma, ysigma)) in enumerate(zip(centers, sigmas)):
     ypts = np.hstack((ypts, np.random.standard_normal(200) * ysigma + ymu))
     labels = np.hstack((labels, np.ones(200) * i))
 alldata = np.vstack((xpts, ypts))
-{% endhighlight %}
+```
 
 #### 2. Clustering w/ fuzzy_cmeans class
 - [python implementatio](https://github.com/bigshanedogg/python-fuzzy-c-means) is posted on github
-{% highlight py linenos %}
+```python
 n_clusters = 3
 m = 2
 metric = "euclidean" # "cosine" # "mahalanobis"
@@ -69,8 +71,10 @@ fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_ch
                  verbose=False)
 
 fcm_model.fit(X, optimization=optimization)
-{% endhighlight %}
+```
 
+#### Reference and Implementation:
+- paper: [FCM: THE FUZZY c-MEANS CLUSTERING ALGORITHM](https://staff.fmi.uvt.ro/~daniela.zaharie/dm2018/RO/TemeProiecte/Biblio/FuzzyCMeans/FCM%20-%20The%20Fuzzy%20c-Means%20Clustering%20Algorithm.pdf), DEC 1984
+- implementation: [python implementation](https://github.com/bigshanedogg/python-fuzzy-c-means)
 
-refernce: [FCM: THE FUZZY c-MEANS CLUSTERING ALGORITHM](https://staff.fmi.uvt.ro/~daniela.zaharie/dm2018/RO/TemeProiecte/Biblio/FuzzyCMeans/FCM%20-%20The%20Fuzzy%20c-Means%20Clustering%20Algorithm.pdf), DEC 1984
-implementation: [python implementation](https://github.com/bigshanedogg/python-fuzzy-c-means)
+<!--language-->

@@ -18,6 +18,7 @@ tags:
     - Assuming clustering sentences, Keywords extracted from each cluster(node) can be regarded as hierachchical topic tree from major topic to sub topics by its parent-child relationship.
 - The results can vary greatly depending on which metric you use to calculate the distance.
   
+ <!--more-->
 
 ### B. Process
 1. Assume n data is n clusters.
@@ -36,7 +37,7 @@ tags:
 
 ### Python example
 #### 1. Clustering w/ sickit-learn
-{% highlight python linenos %}
+```python
 import numpy as np
 from sklearn.cluster import AgglomerativeClustering
 
@@ -45,10 +46,10 @@ n_cluster = 20
 cosine_cl_model = AgglomerativeClustering(affinity="cosine", n_clusters=n_cluster, linkage="complete")
 cosine_cl_model.fit(data)
 cosine_label_list = list(cosine_cl_model.labels_)
-{% endhighlight %}
+```
 
 #### 2. Make Tree
-{% highlight python linenos %}
+```python
 # make tree
 import itertools
 ii = itertools.count(data.shape[0])
@@ -62,11 +63,11 @@ for x in cosine_cl_model.children_:
 depth_list = [[] for i in range(len(data))]
 root_node = len(data) + len(cosine_cl_model.children_) - 1
 get_depth(root_node, 0)
-{% endhighlight %}
+```
 
 
 #### 3. Arrange Cluster by Depth
-{% highlight python linenos %}
+```python
 # get max depth
 max_depth = None
 for depth, node_list in enumerate(depth_list):
@@ -89,8 +90,10 @@ for depth in range(0, max_depth+1):
         cluster_node = cluster_node.difference(parent_node)
         cluster_list[depth] = list(cluster_node)
     print("depth {depth}: {cluster_num}".format(depth=depth, cluster_num=len(cluster_node)))
-{% endhighlight %}
+```
 
-
-reference: [Data Mining] Hierarchical agglomerative Clustering
+#### * reference: #TODO
+- reference: [Data Mining] Hierarchical agglomerative Clustering
 clustering overview posts: Hierarchical agglomerative Clustering
+
+<!--language-->
