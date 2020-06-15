@@ -36,7 +36,7 @@ tags:
 
 ### Python example
 #### 1. Generate sample data
-{%highlight python %}
+{% highlight python %}
 # Define three cluster centers
 centers = [[4, 2],
            [1, 7],
