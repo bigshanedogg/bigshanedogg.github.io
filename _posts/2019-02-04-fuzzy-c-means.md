@@ -16,6 +16,7 @@ tags:
     - The degree of belonging to each centroid is represented by scalar between 0 and 1.
     - It seems proper to cluster which the boundary is ambiguous such as natural language task.
 - Likewise other prototype-based clustering such as K-means family, Fuzzy C-means clustering finds optimal status through repetition.
+<br>
 
 <!--more-->
 
@@ -25,13 +26,14 @@ tags:
 3. Compute the centroid for each cluster.
 4. For each point, compute its coefficients of being in the clusters.
 5. Repeat 3 & 4 until the coefficients' change between two iterations is no more than the given sensitivity threshold
-   
+<br>
+
 ### C. Option
 - distance metric
     - cosine distance
     - euclidean distance
     - mahalanobis distance
-
+<br>
 
 ### Python example
 #### 1. Generate sample data
@@ -40,7 +42,6 @@ tags:
 centers = [[4, 2],
            [1, 7],
            [5, 6]]
-
 # Define three cluster sigmas in x and y, respectively
 sigmas = [[0.8, 0.3],
           [0.3, 0.5],
@@ -57,10 +58,11 @@ for i, ((xmu, ymu), (xsigma, ysigma)) in enumerate(zip(centers, sigmas)):
     labels = np.hstack((labels, np.ones(200) * i))
 alldata = np.vstack((xpts, ypts))
 {% endhighlight %}
+<br>
 
 #### 2. Clustering w/ fuzzy_cmeans class
 - [python implementatio](https://github.com/bigshanedogg/python-fuzzy-c-means) is posted on github
-{% highlight ruby linenos %}
+{% highlight python linenos %}
 n_clusters = 3
 m = 2
 metric = "euclidean" # "cosine" # "mahalanobis"
@@ -69,9 +71,12 @@ optimization = ["weights"] # ["weights", "centers", "error"]
 fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_change=1e-4, min_weights_change=1e-6, max_iter=500, verbose=False)
 fcm_model.fit(X, optimization=optimization)
 {% endhighlight %}
+<br>
+<!--language-->
+
+<!--footer-->
+<br>
 
 #### Reference and Implementation:
 - paper: [FCM: THE FUZZY c-MEANS CLUSTERING ALGORITHM](https://staff.fmi.uvt.ro/~daniela.zaharie/dm2018/RO/TemeProiecte/Biblio/FuzzyCMeans/FCM%20-%20The%20Fuzzy%20c-Means%20Clustering%20Algorithm.pdf), DEC 1984
 - implementation: [python implementation](https://github.com/bigshanedogg/python-fuzzy-c-means)
-
-<!--language-->
