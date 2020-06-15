@@ -25,7 +25,6 @@ tags:
 4. For each point, compute its coefficients of being in the clusters.
 5. Repeat 3 & 4 until the coefficients' change between two iterations is no more than the given sensitivity threshold
    
-
 ### C. Option
 - distance metric
     - cosine distance
@@ -33,10 +32,8 @@ tags:
     - mahalanobis distance
 
 
-
-Python example
-
-1. Generate sample data
+### Python example
+#### 1. Generate sample data
 {% highlight py linenos %}
 # Define three cluster centers
 centers = [[4, 2],
@@ -60,8 +57,7 @@ for i, ((xmu, ymu), (xsigma, ysigma)) in enumerate(zip(centers, sigmas)):
 alldata = np.vstack((xpts, ypts))
 {% endhighlight %}
 
-
-2. Clustering w/ fuzzy_cmeans class
+#### 2. Clustering w/ fuzzy_cmeans class
 - [python implementatio](https://github.com/bigshanedogg/python-fuzzy-c-means) is posted on github
 {% highlight py linenos %}
 n_clusters = 3
