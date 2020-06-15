@@ -19,7 +19,7 @@ tags:
     - Vocabulary Memorization: the fraction of Word overlap between languages and 
     - Mapping new vocabularies onto learned structure
 - Merely pre-training general representtation of languages fron unannotated corpora gurantees baseline performance of downstream task in some circumstances.
-
+<br>
 <!--more-->
 
 ### What does mutlilingual LM means?
@@ -62,5 +62,7 @@ M-BERT shows remarkable performance in task on other language and  task on paral
 
 
 <!--footer-->
+<br>
+
 #### Reference and Implementation:
 - paper: [How multilingual is Multilingual BERT?](https://arxiv.org/abs/1906.01502), 4 Jun 2019 
