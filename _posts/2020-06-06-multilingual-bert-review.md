@@ -19,9 +19,8 @@ tags:
     - Vocabulary Memorization: the fraction of Word overlap between languages and 
     - Mapping new vocabularies onto learned structure
 - Merely pre-training general representtation of languages fron unannotated corpora gurantees baseline performance of downstream task in some circumstances.
-
-<br>
 <!--more-->
+<br>
 
 ### What does mutlilingual LM means?
 it indicates that Language Model trained with various monolingual corpora, in order to make model adapt the representation from one language to problems defined in other language.<br>

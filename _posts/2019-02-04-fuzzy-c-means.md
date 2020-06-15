@@ -16,9 +16,8 @@ tags:
     - The degree of belonging to each centroid is represented by scalar between 0 and 1.
     - It seems proper to cluster which the boundary is ambiguous such as natural language task.
 - Likewise other prototype-based clustering such as K-means family, Fuzzy C-means clustering finds optimal status through repetition.
-<br>
-
 <!--more-->
+<br>
 
 ### B. Process
 1. Choose a number of clusters, K
@@ -38,7 +37,7 @@ tags:
 
 ### Python example
 #### 1. Generate sample data
-{% highlight python linenos %}
+{% highlight python %}
 # Define three cluster centers
 centers = [[4, 2],
            [1, 7],
@@ -47,8 +46,7 @@ centers = [[4, 2],
 sigmas = [[0.8, 0.3],
           [0.3, 0.5],
           [1.1, 0.7]]
-{% endhighlight %}
-{% highlight python linenos %}
+
 # Generate test data
 np.random.seed(42)  # Set seed for reproducibility
 xpts = np.zeros(1)
@@ -64,7 +62,7 @@ alldata = np.vstack((xpts, ypts))
 
 #### 2. Clustering w/ fuzzy_cmeans class
 - [python implementatio](https://github.com/bigshanedogg/python-fuzzy-c-means) is posted on github
-{% highlight python linenos %}
+{% highlight python %}
 n_clusters = 3
 m = 2
 metric = "euclidean" # "cosine" # "mahalanobis"
