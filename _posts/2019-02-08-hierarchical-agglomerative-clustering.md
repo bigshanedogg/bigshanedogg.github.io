@@ -16,13 +16,16 @@ tags:
 - A child node imply one of the meanings parent node indicates in detail.
     - Assuming clustering sentences, Keywords extracted from each cluster(node) can be regarded as hierachchical topic tree from major topic to sub topics by its parent-child relationship.
 - The results can vary greatly depending on which metric you use to calculate the distance.
+
  <!--more-->
+
 <br>
 
 ### B. Process
 1. Assume n data is n clusters.
 2. Find two clusters with the closest distance and combine them into one cluster.
 3. Repeat #2 until one cluster remains
+
 <br>
 
 ### C. Option
@@ -33,6 +36,7 @@ tags:
     - complete(max): the distance between the furthest points of each cluster
     - single(min): the distance between the closest points of each cluster
     - ward(average): the distance between average vectors of points of each cluster
+
 <br>
 
 ### Python example
@@ -93,9 +97,11 @@ for depth in range(0, max_depth+1):
     print("depth {depth}: {cluster_num}".format(depth=depth, cluster_num=len(cluster_node)))
 {% endhighlight %}
 <br>
+
 <!--language-->
 
 <!--footer-->
+
 <br>
 
 #### Reference and Implementation: #TODO

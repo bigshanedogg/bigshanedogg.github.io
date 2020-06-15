@@ -16,7 +16,9 @@ tags:
     - The degree of belonging to each centroid is represented by scalar between 0 and 1.
     - It seems proper to cluster which the boundary is ambiguous such as natural language task.
 - Likewise other prototype-based clustering such as K-means family, Fuzzy C-means clustering finds optimal status through repetition.
+
 <!--more-->
+
 <br>
 
 ### B. Process
@@ -25,6 +27,7 @@ tags:
 3. Compute the centroid for each cluster.
 4. For each point, compute its coefficients of being in the clusters.
 5. Repeat 3 & 4 until the coefficients' change between two iterations is no more than the given sensitivity threshold
+
 <br>
 
 ### C. Option
@@ -58,6 +61,7 @@ for i, ((xmu, ymu), (xsigma, ysigma)) in enumerate(zip(centers, sigmas)):
     labels = np.hstack((labels, np.ones(200) * i))
 alldata = np.vstack((xpts, ypts))
 {% endhighlight %}
+
 <br>
 
 #### 2. Clustering w/ fuzzy_cmeans class
@@ -70,10 +74,12 @@ optimization = ["weights"] # ["weights", "centers", "error"]
 fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_change=1e-4, min_weights_change=1e-6, max_iter=500, verbose=False)
 fcm_model.fit(X, optimization=optimization)
 {% endhighlight %}
+
 <br>
 <!--language-->
 
 <!--footer-->
+
 <br>
 
 #### Reference and Implementation:

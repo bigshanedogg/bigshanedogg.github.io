@@ -19,7 +19,9 @@ tags:
     - Vocabulary Memorization: the fraction of Word overlap between languages and 
     - Mapping new vocabularies onto learned structure
 - Merely pre-training general representtation of languages fron unannotated corpora gurantees baseline performance of downstream task in some circumstances.
+
 <!--more-->
+
 <br>
 
 ### What does mutlilingual LM means?
