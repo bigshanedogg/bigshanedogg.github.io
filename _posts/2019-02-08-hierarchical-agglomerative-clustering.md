@@ -59,7 +59,8 @@ for x in cosine_cl_model.children_:
     parent_node = next(ii)
     tree[parent_node].append(x[0]) # left child
     tree[parent_node].append(x[1]) # left child
-
+{% endhighlight %}
+{% highlight python linenos %}
 # get depth list
 depth_list = [[] for i in range(len(data))]
 root_node = len(data) + len(cosine_cl_model.children_) - 1
@@ -68,7 +69,7 @@ get_depth(root_node, 0)
 <br>
 
 #### 3. Arrange Cluster by Depth
-{% highlight python %}
+{% highlight python linenos %}
 # get max depth
 max_depth = None
 for depth, node_list in enumerate(depth_list):
@@ -77,7 +78,8 @@ for depth, node_list in enumerate(depth_list):
     else:
         max_depth = depth-1
         break
-            
+{% endhighlight %}
+{% highlight python linenos %}            
 # number of clusters by depth
 cluster_list = [[] for i in range(max_depth+1)]
 for depth in range(0, max_depth+1):

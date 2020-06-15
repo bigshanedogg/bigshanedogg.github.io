@@ -33,11 +33,12 @@ tags:
     - cosine distance
     - euclidean distance
     - mahalanobis distance
+
 <br>
 
 ### Python example
 #### 1. Generate sample data
-{% highlight python %}
+{% highlight python linenos %}
 # Define three cluster centers
 centers = [[4, 2],
            [1, 7],
@@ -46,7 +47,8 @@ centers = [[4, 2],
 sigmas = [[0.8, 0.3],
           [0.3, 0.5],
           [1.1, 0.7]]
-
+{% endhighlight %}
+{% highlight python linenos %}
 # Generate test data
 np.random.seed(42)  # Set seed for reproducibility
 xpts = np.zeros(1)
@@ -67,7 +69,6 @@ n_clusters = 3
 m = 2
 metric = "euclidean" # "cosine" # "mahalanobis"
 optimization = ["weights"] # ["weights", "centers", "error"]
-
 fcm_model = fuzzy_cmeans(n_clusters=n_clusters, m=m, metric=metric, min_error_change=1e-4, min_weights_change=1e-6, max_iter=500, verbose=False)
 fcm_model.fit(X, optimization=optimization)
 {% endhighlight %}
