@@ -12,7 +12,7 @@ tags:
 - language_model
 - bert
 ---
-### TLDR;
+### TL;DR:
 - M-BERT(Multilingual BERT) is BERT trained on corpora from various languages.
 - M-BERT does not seem to learn systematic transformation of languages. (complicative syntactic/semantic relationship between languages)
 - The significant factors of M-BERT's performance
