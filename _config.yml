@@ -7,7 +7,7 @@ avatar: /assets/img/profile/bertticon_hd.jpg # https://s3.amazonaws.com/uifaces/
 favicon: /favicon.ico
 twitter_handler: your_handler
 analytics_code: UA-XXXXXXX-2
-disqus: bigshane
+disqus: bigshanedogg
 
 # Social Accounts
 social_networks:
@@ -17,7 +17,7 @@ social_networks:
 -  { name: google-plus, url: '' }
 -  { name: linkedin, url: 'http://www.linkedin.com/in/hodong-lee-ba2274112/' }
 -  { name: skype, url: '' }
--  { name: github, url: 'https://github.com/bigshane' }
+-  { name: github, url: 'https://github.com/bigshanedogg' }
 -  { name: codepen, url: '' }
 -  { name: stack-overflow, url: '' }
 -  { name: dribbble, url: '' }
@@ -56,7 +56,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "https://bigshane.github.io"
+url: "https://bigshanedogg.github.io"
 baseurl: ""
 
 # Includes
