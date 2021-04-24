@@ -15,11 +15,11 @@ tags:
 
 ### TL;DR:
 - M-BERT(Multilingual BERT) is BERT trained on corpora from various languages.
-- M-BERT does not seem to learn systematic transformation of languages. (complicative syntactic/semantic relationship between languages)
+- M-BERT does not seem to learn systematic transformation of languages. (complicate syntactic/semantic relationship between languages)
 - The significant factors of M-BERT's performance
     - Vocabulary Memorization: the fraction of Word overlap between languages and 
     - Mapping new vocabularies onto learned structure
-- Merely pre-training general representtation of languages fron unannotated corpora gurantees baseline performance of downstream task in some circumstances.
+- Merely pre-training general representation of languages from unannotated corpora guarantees baseline performance of downstream task in some circumstances.
 
 <!--more-->
 
