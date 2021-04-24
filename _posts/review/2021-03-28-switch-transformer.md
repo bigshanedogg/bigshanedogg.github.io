@@ -2,7 +2,7 @@
 layout: post
 date: 2021-03-31 15:11
 title: Switch Transformer
-description: Switch Transformer: Pass it to the Experts!
+description: Switch Transformer, Pass it to the Experts!
 comments: True
 category: 
 - paper_review
@@ -13,7 +13,7 @@ tags:
 - transformer
 ---
 
-### TLDR;
+### TL;DR:
 - Switch Transformer is sparsely-active transformer, which can reduce optimizing time by introducing MoE(Mixture of Experts) algorithm and parallelizing parts of model. 
 - The advantage of Switch Transformer is that some layers can be parallelized and computation can be accelerated. Efficiency can increase depending on the number of CPU cores. In addition, Switch Transformer shows improvement in quality in low compute resources.
 - However, optimizing router and MoE layers may be a cause of training instability at the same time. 
