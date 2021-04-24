@@ -1,27 +1,20 @@
 ---
 layout: post
 date: 2019-02-04 19:36
-title: Multilingual BERT
-description: Scrutinzing Multilingual BERT inside
+title: 2019 if Kakao 컨퍼런스 후기
+description: 2019 if Kakao 컨퍼런스 후기
 comments: True
 category: 
-- deep_learning
-- paper_review
+- conference_review
 tags:
-- deep_learning
-- paper_review
-- language_model
-- bert
+- conference
+- kakao
 ---
-2019 if Kakao 컨퍼런스 후기
-
-
 
 (Kakao 컨퍼런스 입장)
-
 2019 if Kakao는 29일에서 30일까지 이틀에 걸쳐 진행되었습니다. 대체로 29일에는 'FE', 30일에는 '데이터'에 대한 내용이 주를 이루었습니다. 
 
-
+<!--more-->
 
 0. 키노트
 
