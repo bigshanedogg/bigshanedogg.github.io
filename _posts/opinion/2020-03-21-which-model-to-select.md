@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2029-03-21 20:56
+date: 2020-03-21 20:56
 title:  어떤 모델이 좋을까
 mood: happy
 category: 
