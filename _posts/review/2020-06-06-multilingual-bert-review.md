@@ -12,6 +12,7 @@ tags:
 - language_model
 - bert
 ---
+
 ### TL;DR:
 - M-BERT(Multilingual BERT) is BERT trained on corpora from various languages.
 - M-BERT does not seem to learn systematic transformation of languages. (complicative syntactic/semantic relationship between languages)
@@ -24,12 +25,12 @@ tags:
 
 <br>
 
-### What does mutlilingual LM means?
-it indicates that Language Model trained with various monolingual corpora, in order to make model adapt the representation from one language to problems defined in other language.<br>
-<br>
 ### Intro.
 The advantages of Deep Contextualized LM are that the model can learn general language representation with large volume of unlabelled data and the learning can be fine-tunned with smaller labelled data for specific task.<br>
 M-BERT, trained on corpora from 104 languages, is the reference model to test zero-shot cross-lingual model transfer. Zero-shot means that the various monolingual corpora used for pre-trainning are not parallel data, which mapped data between languages, and cross-lingual indicates fine-tunning the model to downstream task using one language and evaluating the identical task in other language. There is no other layers appended or structure change to vanilla BERT.<br> 
+<br>
+### What does mutlilingual LM means?
+it indicates that Language Model trained with various monolingual corpora, in order to make model adapt the representation from one language to problems defined in other language.<br>
 <br>
 ###  The hypothesis: How multilingual is M-BERT?
 
